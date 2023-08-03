@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2? family= Noto+Sans:wght@200 & family= Oswald & famille= Poppins:wght@100;200;300;400 & display=swap');
+ 
+ *{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins" , sans-serif;
+    box-sizing: border-box;
+}
+html {
+    font-size: 90%;
+    scroll-padding-top: 7em;
+    scroll-behavior: smooth;
+}
+section{
+    margin-top: 50px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 60px;
+}
+header .logo img{
+    margin-top: 3px;
+}
+a{
+    text-decoration: 0;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu li{
+    margin: 0 15px;
+    list-style-type: none;
+ 
+}
+.menu li a{
+color: black;
+font-size: 18px;
+}
+.btn-reservation{
+    color: #df252f;
+    border: 2px solid #df252f;
+    font-size: 16px;
+    transition: 0.5s;
+    padding: 5px 20px;
+    font-weight: bold;
+    margin-top: 7px;
+}
+.btn-reservation:hover{
+    background-color: #df252f;
+    color: #fff;
+}
+.menu li a:hover{
+    color: #df252f;
+}
+#milieu{
+    background: linear-gradient(rgba(0,0,0,0), #000), url('paris.jpg');
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#milieu h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+#milieu h3{
+    font-size: 30px;
+    color: #ccc;
+    text-transform: capitalize;
+}
+.title{
+    text-transform: uppercase;
+    position: relative;
+    font-size: 25px;
+}
+.title:before {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    content: "";
+    background-color: #df252f;
+    width: 100%;
+    height: 5px;
+    border-radius: 6px;
+}
+.title:after {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    content: "";
+    background-color: #df252f;
+    width: 100%;
+    height: 5px;
+    border-radius: 6px;
+}
+#services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+.list-services{
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.service1{
+    width: 20em;
+    height: 20em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 20px;
+    margin: 20px;
+}
+.service1 h3{
+font-size: 15px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+.service1 p{
+font-size: 15px;
+margin-bottom: 8px;
+}
+.service1 i{
+font-size: 25px;
+height: 50px;
+width: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #df252f;
+margin-top: 10px;
+color: #fff;
+border-radius: 50%;
+}
+#contact{
+    padding: 0 10%;
+    margin-bottom: 20px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+#contact form{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+}
+.left-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+  .left-right .left, .left-right .right{
+     display: flex;
+     flex-direction: column;
+     width: 45%;
+ }
+ #contact form label{
+    font-size: 14px;
+    padding: 15px 0;
+    font-weight: 600;
+ }
+ #contact form input{
+    padding: 8px;
+    outline: 0;
+    border: 1px solid #999;
+ }
+textarea{
+    height: 150px;
+    resize: none;
+    outline: 0;
+    width: 100%;
+    padding: 10px;
+}
+#contact form input:focus , textarea:focus{
+    border: 1px solid #df252f;
+}
+iframe{
+    height: 190px;
+    width: 100%;
+}
+#contact button{
+    width: fit-content;
+    padding: 8px 40px;
+    background-color: black;
+    border: 1px solid black;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#contact button:hover{
+    letter-spacing: 1px;
+    background-color: #df252f;
+}
+footer{
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+    font-size: 15px;
+    text-align: center;
+}
+footer p{
+    color: #fff;
+}
+footer p span{
+    color: #df252f;
+}
+/*Responsive*/
+@media (max-width:750px){
+    header .menu{
+        display: none;
+    }
+    .btn-reservation{
+        display: none;
+    }
+}
+/* a propos css*/
+#a-propos{
+    margin-bottom: 95px;
+    padding: 0 10%;
+    width: 100%; 
+}
+.titre{
+    text-transform: uppercase;
+    margin: 70px 0;
+    font-weight: bold;
+    color: #000;
+    position: relative;
+    margin-left: 10px;
+    font-size: 25px;
+}
+.titre::after{
+    position: absolute;
+    left: -15px;
+    content: "";
+    height: 100%;
+    background-color: #df252f;
+    width: 5px;
+}
+.desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.desc .left{
+    position: relative;
+    margin-left: 10px;
+    height: 250px;
+    width: 40%;
+}
+.desc .left img{
+    width: 30em;
+    height: 20em;
+   position: relative;
+   box-shadow: 0 0 10px #df252f;
+}
+.desc .right{
+    width: 57%;
+}
+.desc .right h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.desc .right p{
+    font-size: 20px;
+    margin-bottom: 15px;
+    
+}
